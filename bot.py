@@ -37,5 +37,5 @@ async def on_message(message):
 # Run the keep_alive server
 keep_alive()
 
-# Run the bot (use your bot token here)
+# Run the bot
 client.run(os.getenv("DISCORD_TOKEN"))
