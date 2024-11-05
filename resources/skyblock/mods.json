@@ -1,0 +1,13 @@
+{
+    "minecraft": {
+        "name": "Minecraft",
+        "description": {
+            "summary": "A sandbox video game developed by Mojang Studios.",
+            "features": ["Building", "Mining", "Crafting", "Exploration"]
+        },
+        "links": [
+            { "name": "Official Website", "url": "https://www.minecraft.net" },
+            { "name": "Wiki", "url": "https://minecraft.wiki/" }
+        ]
+    }
+}
