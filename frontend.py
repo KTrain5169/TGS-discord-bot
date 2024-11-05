@@ -4,14 +4,17 @@ from bot_code.backend import handle_ping_command, get_mod_info
 from bot_code.keep_alive import keep_alive
 
 intents = discord.Intents.default()
+intents.message_content = True
 client = discord.Client(intents=intents)
 
 # Start the web server to keep the bot alive
 keep_alive()
 
+
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+
 
 @client.event
 async def on_message(message):
@@ -21,7 +24,8 @@ async def on_message(message):
     # !ping
     if message.content.startswith('!ping'):
         latency = client.latency  # Get bot's latency
-        response = handle_ping_command(latency)  # Call backend function with latency
+        response = handle_ping_command(
+            latency)  # Call backend function with latency
         await message.channel.send(response)
 
     # !mod
