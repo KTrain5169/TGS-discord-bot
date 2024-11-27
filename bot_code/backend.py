@@ -23,7 +23,7 @@ def get_mod_info(modname):
     
     # Format links
     links = mod.get("links", [])
-    links_text = "\n".join([f"[{link['name']}]({link['url']})" for link in links])
+    links_text = "\n".join([f"[{link['name']}](<{link['url']}>)" for link in links])
     
     # Combine everything into the response
     return f"**{name}**\n\n{description_text}\n\n**Links:**\n{links_text}"
