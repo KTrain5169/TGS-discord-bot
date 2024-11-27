@@ -5,7 +5,7 @@ WIP discord bot for TheGoldenServer
 ## Running
 
 ```shell
-git clone https://github.com/KTrain5169/TGS-coding-discord-bot.git
+git clone https://github.com/KTrain5169/TGS-discord-bot.git
 python -m venv venv
 venv\scripts\activate
 pip install -r requirements.txt
